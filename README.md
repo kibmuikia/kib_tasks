@@ -1,23 +1,40 @@
-# tasks
+# KTasks - A RESTful Task Management API
 
-This project was created using the [Ktor Project Generator](https://start.ktor.io).
+KTasks is a lightweight yet robust task management API built with Ktor, demonstrating modern Kotlin backend development practices. The application follows a clean architectural pattern, organizing code into distinct layers for maintainability and scalability.
 
-Here are some useful links to get you started:
+## Architecture
 
-- [Ktor Documentation](https://ktor.io/docs/home.html)
-- [Ktor GitHub page](https://github.com/ktorio/ktor)
-- The [Ktor Slack chat](https://app.slack.com/client/T09229ZC6/C0A974TJ9). You'll need to [request an invite](https://surveys.jetbrains.com/s3/kotlin-slack-sign-up) to join.
+The project follows a clean architecture pattern with the following structure:
+```
+src/main/kotlin/kib/dev/tasks/
+├── handlers/       # Request handlers for processing HTTP requests
+├── models/         # Data models and utility classes
+├── repositories/   # Data access layer
+├── routes/         # Route definitions
+├── services/       # Business logic layer
+└── utils/          # Utility functions and helpers
+```
 
 ## Features
 
-Here's a list of features included in this project:
+| Feature                                                                  | Description                                                                        |
+|--------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) | Organized in layers for separation of concerns |
+| [RESTful API](https://ktor.io/docs/routing-in-ktor.html)                | Complete CRUD operations for task management |
+| [Default Headers](https://ktor.io/docs/default-headers.html)            | Adds a default set of headers to HTTP responses |
+| [Content Negotiation](https://ktor.io/docs/serialization.html)          | JSON serialization using kotlinx.serialization |
+| [Status Pages](https://ktor.io/docs/status-pages.html)                  | Proper error handling with appropriate HTTP responses |
 
-| Name                                                                   | Description                                                                        |
-| ------------------------------------------------------------------------|------------------------------------------------------------------------------------ |
-| [Default Headers](https://start.ktor.io/p/default-headers)             | Adds a default set of headers to HTTP responses                                    |
-| [Content Negotiation](https://start.ktor.io/p/content-negotiation)     | Provides automatic content conversion according to Content-Type and Accept headers |
-| [Routing](https://start.ktor.io/p/routing)                             | Provides a structured routing DSL                                                  |
-| [kotlinx.serialization](https://start.ktor.io/p/kotlinx-serialization) | Handles JSON serialization using kotlinx.serialization library                     |
+## API Endpoints
+
+| Method | Endpoint     | Description         |
+|--------|--------------|---------------------|
+| GET    | /tasks       | Get all tasks       |
+| GET    | /tasks/{id}  | Get task by ID      |
+| POST   | /tasks       | Create a new task   |
+| PUT    | /tasks/{id}  | Update task by ID   |
+| DELETE | /tasks/{id}  | Delete task by ID   |
+
 
 ## Building & Running
 
@@ -32,6 +49,15 @@ To build or run the project, use one of the following tasks:
 | `publishImageToLocalRegistry` | Publish the docker image locally                                     |
 | `run`                         | Run the server                                                       |
 | `runDocker`                   | Run using the local docker image                                     |
+
+## Getting Started
+
+1. Clone the repository: bash `git clone https://github.com/yourusername/ktasks.git`
+
+2. Navigate to the project directory: `cd ktasks`
+
+3. Run the application: `./gradlew run`
+
 
 If the server starts successfully, you'll see the following output:
 
