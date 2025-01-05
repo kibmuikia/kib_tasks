@@ -1,0 +1,46 @@
+[1;36m.[0m
+├── README.md
+├── build.gradle.kts
+├── [1;36mgradle[0m
+│   ├── libs.versions.toml
+│   └── [1;36mwrapper[0m
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── [31mgradlew[0m
+├── gradlew.bat
+├── project-tree.txt
+├── settings.gradle.kts
+└── [1;36msrc[0m
+    ├── [1;36mmain[0m
+    │   ├── [1;36mkotlin[0m
+    │   │   └── [1;36mkib[0m
+    │   │       └── [1;36mdev[0m
+    │   │           └── [1;36mtasks[0m
+    │   │               ├── Application.kt
+    │   │               ├── HTTP.kt
+    │   │               ├── Routing.kt
+    │   │               ├── Serialization.kt
+    │   │               ├── [1;36mhandlers[0m
+    │   │               │   └── KTaskHandler.kt
+    │   │               ├── [1;36mmodels[0m
+    │   │               │   ├── KTask.kt
+    │   │               │   └── utils.kt
+    │   │               ├── [1;36mrepositories[0m
+    │   │               │   └── KTaskRepository.kt
+    │   │               ├── [1;36mroutes[0m
+    │   │               │   └── KTaskRoutes.kt
+    │   │               ├── [1;36mservices[0m
+    │   │               │   └── KTaskService.kt
+    │   │               └── [1;36mutils[0m
+    │   │                   └── RouteUtils.kt
+    │   └── [1;36mresources[0m
+    │       ├── application.yaml
+    │       └── logback.xml
+    └── [1;36mtest[0m
+        └── [1;36mkotlin[0m
+            └── [1;36mkib[0m
+                └── [1;36mdev[0m
+                    └── ApplicationTest.kt
+
+20 directories, 24 files
