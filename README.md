@@ -52,7 +52,7 @@ To build or run the project, use one of the following tasks:
 
 ## Getting Started
 
-1. Clone the repository: bash `git clone https://github.com/yourusername/ktasks.git`
+1. Clone the repository: bash `git clone https://github.com/kibmuikia/kib_tasks`
 
 2. Navigate to the project directory: `cd ktasks`
 
