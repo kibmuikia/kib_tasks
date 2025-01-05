@@ -1,8 +1,5 @@
 package kib.dev.tasks.models
 
-const val INVALID_ID_MESSAGE = "Invalid ID format"
-const val NOT_FOUND_MESSAGE = "Task not found"
-
 // In-memory storage for MVP
 object KTaskStorage {
     private val tasks = mutableMapOf<Int, KTask>()
