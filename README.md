@@ -17,13 +17,13 @@ src/main/kotlin/kib/dev/tasks/
 
 ## Features
 
-| Feature                                                                  | Description                                                                        |
-|--------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) | Organized in layers for separation of concerns |
-| [RESTful API](https://ktor.io/docs/routing-in-ktor.html)                | Complete CRUD operations for task management |
-| [Default Headers](https://ktor.io/docs/default-headers.html)            | Adds a default set of headers to HTTP responses |
-| [Content Negotiation](https://ktor.io/docs/serialization.html)          | JSON serialization using kotlinx.serialization |
-| [Status Pages](https://ktor.io/docs/status-pages.html)                  | Proper error handling with appropriate HTTP responses |
+| Feature                                                                                            | Description                                           |
+|----------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) | Organized in layers for separation of concerns        |
+| [RESTful API](https://ktor.io/docs/routing-in-ktor.html)                                           | Complete CRUD operations for task management          |
+| [Default Headers](https://ktor.io/docs/default-headers.html)                                       | Adds a default set of headers to HTTP responses       |
+| [Content Negotiation](https://ktor.io/docs/serialization.html)                                     | JSON serialization using kotlinx.serialization        |
+| [Status Pages](https://ktor.io/docs/status-pages.html)                                             | Proper error handling with appropriate HTTP responses |
 
 ## API Endpoints
 
@@ -41,7 +41,7 @@ src/main/kotlin/kib/dev/tasks/
 To build or run the project, use one of the following tasks:
 
 | Task                          | Description                                                          |
-| -------------------------------|---------------------------------------------------------------------- |
+|-------------------------------|----------------------------------------------------------------------|
 | `./gradlew test`              | Run the tests                                                        |
 | `./gradlew build`             | Build everything                                                     |
 | `buildFatJar`                 | Build an executable JAR of the server with all dependencies included |
